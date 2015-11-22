@@ -28,13 +28,13 @@ The "Training" and "Test" data were first merged into a single data set.  The co
     
 The "X" data was stored in a file called "xcombined.txt" and the "Y" data was stored in a file called "ycombined.txt"
 
-### Step 1: Create a directory to store merged data
+#### Step 1: Create a directory to store merged data
 
 The script first checks to see if a "combined" directory exists in the "UCI HAR Dataset" directory.  If this does not exist it creates on.  
     
 This directory is used to store the combined training and test data sets.
 
-### Step 2: Process X "training" and "test" data
+#### Step 2: Process X "training" and "test" data
 
 The script then performs the following steps
     
@@ -44,7 +44,7 @@ The script then performs the following steps
     4. Writes the combined x data set out into a file called "xcombined.txt" 
     
     
-### Step 3: Process Y "training" and "test" data
+#### Step 3: Process Y "training" and "test" data
     
 The script then performs the following steps
 
@@ -53,7 +53,7 @@ The script then performs the following steps
     3. Combines the y "training" and "test" data sets
     4. Writes the combined y data out into a a file called "ycombined.txt" 
     
-### Step 4: Process subject "training" and "test" data
+#### Step 4: Process subject "training" and "test" data
     
 The script then performs the following steps
 
@@ -66,50 +66,50 @@ The script then performs the following steps
 
 In this phase the combined data is processed and used to generate a new *tidy* data set
     
-### Step 1: Read in the activity labels
+#### Step 1: Read in the activity labels
 
 The script then performs the following processing
     
     * Read in the data used to label the training data from "ycombined.txt"
     
-### Step 2: Combine the activity label IDs and Subject data with the measurement data
+#### Step 2: Combine the activity label IDs and Subject data with the measurement data
 
 The script then performs the following processing
 
     * Combine the activity label IDs and Subject data with the measurement data
 
-### Step 3: Merge the Activity "Labels" with the measurement data
+#### Step 3: Merge the Activity "Labels" with the measurement data
 
 The script then performs the following processing
 
     * Combine the activity **labels** from "activity_labels.txt" with the measurement data
 
-### Step 4: Remove Activity ID column from the merged data
+#### Step 4: Remove Activity ID column from the merged data
 
 The script then performs the following processing
 
     * Remove the superfluous activity *label ID* from the combined data
     
-### Step 5: Extracts the "mean" and "std" data to a new data frame
+#### Step 5: Extracts the "mean" and "std" data to a new data frame
 
 The script then performs the following steps
 
     1. Extract the "std" and "mean" values fomr the combined data
     2. Store this data in a new "reduced" data frame
 
-### Step 6: Add descriptive column names
+#### Step 6: Add descriptive column names
 
 The script then performs the following
 
     * Adds human readable column names to the new "reduced" data frame
 
-### Step 10: Save "reduced" data to a file
+#### Step 10: Save "reduced" data to a file
 
 The script then performs the following
 
     * Save the"reduced" data frame to "reduced.txt" in the "./UCI HAR Dataset/combined" directory
 
-### Step 11: Generates tidy data set
+#### Step 11: Generates tidy data set
 
 The script then performs the following steps
 
