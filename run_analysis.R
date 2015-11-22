@@ -35,14 +35,32 @@ run_analysis <- function(){
     ## Write combined y data out into a file
     write.table(ycombined, "./UCI HAR Dataset/combined/ycombined.txt", sep=" ", row.names=FALSE, col.names=FALSE)
      
+    
+    #
+    # Process Subject "training" and "test" data
+    #
+    
+    ## Read in the y "test" data set
+    subjecttest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header=FALSE, strip.white=TRUE)
+    ## Read in the y "training" data set
+    subjecttrain <- read.table("./UCI HAR Dataset/train/subject_train.txt", header=FALSE, strip.white=TRUE)
+    
+    ## Combine the y "training" and "test" data sets => Actually activity
+    subjectcombined <- rbind(subjecttrain, subjecttest)
+    ## Write combined y data out into a file
+    write.table(ycombined, "./UCI HAR Dataset/combined/subjectcombined.txt", sep=" ", row.names=FALSE, col.names=FALSE)
+    
+    
     ## Read in the activity labels
     activitylabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header=FALSE, strip.white=TRUE)
   
     ## Combine the activity label IDs with the measurement data
-    xcombinedWithActivityIDs <- data.frame(ycombined, xcombined)
+    xcombinedWithActivityIDs <- data.frame(ycombined, xcombined, subjectcombined)
     
     ## Merge the Activity "Labels" with the measurement data
     mergedx <- merge(activitylabels, xcombinedWithActivityIDs,by="V1")
+    
+    
     
     ## Remove Activity ID column
     mergedx$V1 <- NULL
@@ -70,4 +88,5 @@ run_analysis <- function(){
 
     ## generate averages...
     
+    reduced
 }

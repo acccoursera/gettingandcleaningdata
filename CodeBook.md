@@ -1,5 +1,6 @@
 ---
 title: "CodeBook"
+date: "November 20, 2015"
 output: html_document
 ---
 # Overview
@@ -50,11 +51,11 @@ The script then performs the following steps
     3. Combines the y "training" and "test" data sets
     4. Writes the combined y data out into a a file called "ycombined.txt" 
     
-### Step 3: Process Y "training" and "test" data
+### Step 4: Process subject "training" and "test" data
     
 The script then performs the following steps
 
-    1. Reads in the subjecct "test" data set
+    1. Reads in the subject "test" data set
     2. Reads in the subject "training" data set
     3. Combines the subject "training" and "test" data sets
     4. Writes the combined subject data out into a a file called "subjectcombined.txt" 
