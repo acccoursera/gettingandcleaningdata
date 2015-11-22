@@ -69,8 +69,9 @@ add_column_names <- function(df){
       "fBodyBodyAccJerkMag-std()",
       "fBodyBodyGyroMag-mean()",
       "fBodyBodyGyroMag-std()",
-      "fBodyBodyGyroJerkMag-mean()"#,
+      "fBodyBodyGyroJerkMag-mean()",
       #"fBodyBodyGyroJerkMag-std()"
+      "Subject"
     )
     
     df
