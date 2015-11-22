@@ -29,6 +29,8 @@ In order to successfully run "run_analysis.R" do the following
     
 5. Call the "run_analysis.R" from within an R environment
 
+    * If successful, the script will generate a file called "tidy.txt" in the same directory as the script
+
 
   
 NOTE: The script assumes that the dataset has been extracted to a sub-directory called *"UCI HAR Dataset"*.  If this directory does not exist it will **not run correctly**.
