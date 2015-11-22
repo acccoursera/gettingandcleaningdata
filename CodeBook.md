@@ -13,6 +13,8 @@ The source data is split into "Test" and "Training" data sets. The test data is 
 
 Both "X_train.txt" and "X_test.txt" contain measurements for each category while "y_train.txt" and "y_test.txt" contain the labels for the measurement data.
 
+The data "Subjects" are also split into two files called "subject_test.txt" and "subject_train.txt"
+
 The data in each data set consists of 561 attributes (columms) of data. There are 7352 instances (rows) in the "Training" data and 2947 instances (rows) in the test data.  
   
 
@@ -70,11 +72,11 @@ The script then performs the following processing
     
     * Read in the data used to label the training data from "ycombined.txt"
     
-### Step 2: Combine the activity label IDs with the measurement data
+### Step 2: Combine the activity label IDs and Subject data with the measurement data
 
 The script then performs the following processing
 
-    * Combine the activity label IDs with the measurement data
+    * Combine the activity label IDs and Subject data with the measurement data
 
 ### Step 3: Merge the Activity "Labels" with the measurement data
 
@@ -95,7 +97,7 @@ The script then performs the following steps
     1. Extract the "std" and "mean" values fomr the combined data
     2. Store this data in a new "reduced" data frame
 
-### Step 6: Add descriptive couumn names
+### Step 6: Add descriptive column names
 
 The script then performs the following
 
@@ -119,7 +121,7 @@ The script then performs the following steps
     
 ## Units of data sets
 
->NOTE: All processed data (i.e. the newly combined data and the generated "tidy" data) is in the same uits of the original test and traing data sets.  The units for these variables are descibed in the follwing files
+>NOTE: All processed data (i.e. the newly combined data and the generated "tidy" data) is in the same units of the original test and traing data sets.  The units for these variables are descibed in the follwing files
 
   * Featrues.txt
   * features_info.txt
