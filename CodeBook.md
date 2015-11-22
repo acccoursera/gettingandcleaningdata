@@ -112,7 +112,21 @@ The script then performs the following
 The script then performs the following steps
 
     1. Process the "reduced" data frame
-    2. Save the results to "tidy.txt" in the "./UCI HAR Dataset/combined" directory
+    
+        * i.e. Calculate the means for each of the numeric columns
+        
+    2. Save the results to "tidy.txt" in the directory as the "run_analysis.R" script
+    
+## Units of data sets
+
+>NOTE: All processed data (i.e. the newly combined data and the generated "tidy" data) is in the same uits of the original test and traing data sets.  The units for these variables are descibed in the follwing files
+
+  * Featrues.txt
+  * features_info.txt
+  * activity_labels.txt
+  * README.txt
+  
+that can be found in the "UCI HAR Dataset" directory and also [here][data source description].
 
 
 [data source]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
